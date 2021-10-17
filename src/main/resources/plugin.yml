@@ -1,0 +1,23 @@
+name: JoinLocation
+version: ${project.version}
+main: dev.benergy10.joinlocation.JoinLocation
+api-version: 1.13
+authors: [ benwoo1110 ]
+softdepend: [ Multiverse-Core ]
+commands:
+  setjoinlocation:
+    description: Sets the location for players to be at on joining the server.
+    permission: joinlocation.command.set
+  joinlocation:
+    description: Manually teleports to join location.
+    permission: joinlocation.command.teleport
+permissions:
+  joinlocation.command.set:
+    description: Sets the location for players to be at on joining the server.
+    default: op
+  joinlocation.command.teleport:
+    description: Manually teleports to join location.
+    default: op
+  joinlocation.joinlocation:
+    description: Teleports to join location on server join.
+    default: true
